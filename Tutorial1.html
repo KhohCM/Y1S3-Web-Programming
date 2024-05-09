@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 1 _ Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form action="/submit-form" method="post">
+
+        <h1>Register Here</h1>
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <br>
+        <label for="gender">Gender:</label>
+
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+
+        <br>
+        <label for="phone">Phone:</label>
+        <select name="phone" id="phone">
+            <option value="+60">+60</option>
+        </select>
+
+        <input type="tel" id="phone" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+        <br><br>
+        <input type="submit">
+
+    </form>
+
+</body>
+
+</html>
