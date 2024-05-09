@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAI timetable Y1Y3</title>
+
+    <link rel="stylesheet" href="timetable.css">
+</head>
+<body>
+    
+    <h1>Raffles University</h1>
+    <h3>Programme Timetable - Jan 2024 Semester <br>
+        Period :May 2024 to Aug 2024
+    </h3>
+
+    <p id="course"><b>Programme : Bachelor of Information System (Honours) in Artifical Intelligence</b></p>
+
+    <table  border="5px" width="100%" >
+
+        <tr>
+            <th>Day/ Time</th>
+            <td colspan="2">8:00AM-8:59AM</td>
+            <td colspan="2">9:00AM-9:59AM</td>
+            <td colspan="2">10:00AM-10:59AM</td>
+            <td colspan="2">11:00AM-11:59AM</td>
+            <td colspan="2">12:00NN-12:59PM</td>
+            <td colspan="2">1:00PM-1:59PM</td>
+            <td colspan="2">2:00PM-2:59PM</td>
+            <td colspan="2">3:00PM-3:59PM</td>
+            <td colspan="2">4:00PM-4:59PM</td>
+            <td colspan="2">5:00PM-6:00PM</td>
+        </tr>
+
+        <tr>
+            <th colspan="1">Monday</th>
+            <!-- 此处bug*1 -->
+            <td colspan="1"></td>
+            <td colspan="6"><b>BAI11113 Principles of Computer Programming</b> <br> Dr Choo - Academic Room 12</td>
+            <td colspan="3"> </td>
+            <td colspan="6"><b>BAI12153 Web Programming</b> <br>Dr Choo - Academic Room 12</td>
+            <td colspan="4"> </td>
+        </tr>
+
+        <tr>
+                <th rowspan="2" colspan="1">Tuesday</th>
+                <!-- 此处bug*2 -->
+                <td colspan="1"></td>
+                <td colspan="6"><b>MPU3213 Bahasa Kebangsaan A </b> <br>Salmiah - Academic Room 5 & 6 </td>
+                <td colspan="3"> </td>
+                <td colspan="6"><b>BAI31013 Project 1 & BAI32013 Project 2 </b> <br> Dr Sasa - AI Lab </td>
+                <td colspan="4"> </td>
+        </tr>
+
+        <tr>
+            <!-- 此处bug*3 -->
+            <td colspan="1"></td>
+            <td colspan="6"><b>BAI32043 Deep Learning with Computer Vision</b> <br>Salmiah - Academic Room 5 & 6 </td>
+            <td colspan="3"> </td>
+            <td colspan="6"><b>BUS11013 Marketing</b> <br>Dr Steven Tan - Seminar Hall</td>
+            <td colspan="4"> </td>
+        </tr>
+
+        <tr>
+            <th>Wednesday</th>
+            <td> </td>
+            <td colspan="6"><b>MPU3183 Penghayatan Etika dan Peradaban </b> <br>PT Suhaila - Seminar Hall</td>
+            <td colspan="2"> </td>
+            <!--此处也有bug-->
+            <td colspan="4"><b>MPU3412 U4 Community Service</b> <br>Low See Mei - Seminar Hall</td>
+            <td colspan="7"><i>Student Extra Curricular Activities</i></td>
+        </tr>
+
+        <tr> 
+            <th rowspan="2">Thursday</th>
+            <td> </td>
+            <td colspan="6"><b>BAI21113 Software Engineering </b> <br>PT Kang - Academic Room 9</td>
+            <td colspan="3"> </td>
+            <td colspan="2"></td>
+            <td colspan="6"><b>BAI32033 Mobile Applications Development</b> <br>Dr Sasa - AI Lab </td>
+            <td colspan="2"> </td>
+        </tr>
+
+        <tr>
+            <td colspan="10"> </td>
+            <td colspan="4"> </td>
+            <td colspan="6"><b>MPU3223 Creative Thinking</b> <br>Wong Shir Ling - Seminar Hall</td>
+        </tr>
+
+        <tr>
+            <th rowspan="2">Friday</th>
+            <td> </td>
+            <!--加了下面这句就变正常了。why？-->
+            <td colspan="8"><b>BIT23114 Project Management </b><br>Dr Choo - Creative Lab</td>
+            <td> </td>
+            <td colspan="3"> </td>
+            <td colspan="6"><b>MPU3313 U3 Malaysian Innovation </b><br>PT Asokan - Seminar Hall</td>
+            <td> </td>
+        </tr>
+
+        <tr>
+            <td> </td>
+            <td colspan="6"><b>BAI21013 Statistics for Artificial Intelligence </b> <br> Manoreeta - AI Lab</td>
+            <td colspan="3"> </td>
+            <td colspan="2"></td>
+            <td colspan="6"><b>BAI22013 Deep Neural Network Architectures </b> <br>Dr Sasa - AI Lab</td>
+            <td colspan="3"> </td>
+
+
+        </tr>
+
+
+    </table>
+
+</body>
+</html>
